@@ -13,7 +13,7 @@ conda env create -f environment.yml
 
 ## 微調模型介紹
 checkpoint-4000_01為使用label_0120中前823筆資料為訓練集微調，最後200筆為測試集，分數如下圖:
-![metric]("metric.png")
+![metric](metric.png)
 
 
 ## 模型推理
