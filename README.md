@@ -12,8 +12,7 @@ conda env create -f environment.yml
 ```
 
 ## 微調模型介紹
-checkpoint-4000_01為使用label_0120中前823筆資料為訓練集微調，最後200筆為測試集，分數如下圖:
-![metric]("https://github.com/sandychinghuang/glm-4v-8b-base-recruitment-advertisement/blob/main/metric.png")
+checkpoint-4000_01為使用label_0120中前823筆資料為訓練集微調，最後200筆為測試集，分數如圖metric.png。
 
 
 ## 模型推理
