@@ -1,9 +1,9 @@
 # GLM-4v-8b-base-recruitment-advertisement
 
 ## 硬體設備
-python: 3.10
-CUDA: 12.1
-GPU: 32GB以上
+python: 3.10。
+CUDA: 12.1。
+GPU: 32GB以上。
 
 ## 環境設置
 您可以使用以下指令來創建完整conda虛擬環境glm_py_3.10:
@@ -13,7 +13,7 @@ conda env create -f environment.yml
 
 ## 微調模型介紹
 checkpoint-4000_01為使用label_0120中前823筆資料為訓練集微調，最後200筆為測試集，分數如下圖:
-![metric]("D:\s_cvplan_demo\glm\score.png")
+![metric]("metric.png")
 
 
 ## 模型推理
