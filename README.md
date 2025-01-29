@@ -13,7 +13,7 @@ conda env create -f environment.yml
 
 ## 微調模型介紹
 checkpoint-4000_01為使用label_0120中前823筆資料為訓練集微調，最後200筆為測試集，分數如下圖:
-![图片描述]("D:\s_cvplan_demo\glm\score.png")
+![metric]("D:\s_cvplan_demo\glm\score.png")
 
 
 ## 模型推理
@@ -25,4 +25,4 @@ checkpoint-4000_01為使用label_0120中前823筆資料為訓練集微調，最�
 ```bash
 python inference.py checkpoint-4000_01
 ```
-> 第一次推理，將自動下載原始模型。
+> 第一次推理，將自動下載base model:THUDM/glm-4v-9b。
