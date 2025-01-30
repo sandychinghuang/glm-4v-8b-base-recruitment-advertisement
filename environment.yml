@@ -198,4 +198,3 @@ dependencies:
   - zstd=1.5.6=hc292b87_0
   - pip:
       - rouge-chinese==1.0.3
-prefix: /home/at0505/chuang-rsv1/anaconda3/envs/glm_py_3.10

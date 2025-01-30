@@ -14,7 +14,7 @@ def xlsx_to_jsonl(file_path, output_path):
     
     with open(output_path, 'w', encoding='utf-8') as f:
         for _, row in data.iterrows():
-            # 用户信息
+###### 需更改"image"路徑 #######
             user_message = {
                 "role": "user",
                 "content": """
@@ -68,6 +68,7 @@ def xlsx_to_jsonl(file_path, output_path):
     print(f"已成功轉換並保存到 {output_path}")
 
 # 轉換數據並保存為 JSONL 文件
+###### 需更改路徑 #######
 input_file = r"D:\s_cvplan\label\label_0120.xlsx"  # 輸入的 Excel 文件路徑
 output_file = "text.jsonl"  # 輸出的 JSONL 文件路徑
 xlsx_to_jsonl(input_file, output_file)

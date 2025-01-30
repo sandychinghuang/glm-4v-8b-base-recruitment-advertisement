@@ -270,9 +270,9 @@ def main(
     model_dir: Annotated[str, typer.Argument(help="")],
 ):
     model, tokenizer = load_model_and_tokenizer(model_dir)
-    print(model)
-    print("======")
-    print(tokenizer)
+    # print(model)
+    # print("======")
+    # print(tokenizer)
     generate_kwargs = {
         "max_new_tokens": 2500,
         "do_sample": True,
@@ -283,7 +283,7 @@ def main(
     }
     MAX_RESOLUTION = (1120, 1120)
     
-######### 要test的文件路徑，文件格式請參見label_200_test.txt，xlsx轉換jsonl腳本:xlsx2jsonl.py ##########
+######### 要test的文件路徑，文件格式請參見test.jsonl，xlsx轉換jsonl腳本:xlsx2jsonl.py ##########
     data_file = "test.jsonl"
     
     with open(data_file, "r", encoding="utf-8") as f:
@@ -403,7 +403,7 @@ def main(
             print(f"Error processing {image_path}: {e}")
             predictions.append({"file_name": image_path, "generated": None, "label": label})
         
-########## 保存生成內容的路徑########
+########## 保存生成內容的路徑 ########
         output_path = "glm_test_predictions.jsonl"
         with open(output_path, "w", encoding="utf-8") as f:
             for prediction in predictions:
