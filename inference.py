@@ -377,8 +377,6 @@ def main(
 
                         # 清理生成內容
                         cleaned_content = clean_generated_content(generated_content)
-                        if not generated_content:
-                            raise ValueError("Generated content is empty.")
 
                         # 嘗試解析 JSON
                         generated = json.loads(cleaned_content)
@@ -396,7 +394,7 @@ def main(
                     generated = None
                     break  # 如果是其他錯誤，退出循環
 
-        # 添加到結果列表，包含filename、生成結果、label
+            # 添加到結果列表，包含file_name、generated、label
             predictions.append({"file_name": image_path, "generated": generated, "label": label})
 
         except Exception as e:
