@@ -1,8 +1,8 @@
 # GLM-4v-8b-base-recruitment-advertisement
 
 ## 微調設備
-+ os: Ubuntu 22.04.2 LTS。
-+ python: 3.10。
++ OS: Ubuntu 22.04.2 LTS。
++ Python: 3.10。
 + CUDA Version: 12.1。
 + GPU Driver Version: 550.127.08。
 + GPU: NVIDIA H200-140GB，推理至少需32GB以上的GPU。
