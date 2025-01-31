@@ -1,10 +1,11 @@
 # GLM-4v-8b-base-recruitment-advertisement
 
-## 設備需求
-linux
-python: 3.10。
-CUDA: 12.1。
-GPU: 32GB以上。
+## 微調設備
++ os: Ubuntu 22.04.2 LTS。
++ python: 3.10。
++ CUDA Version: 12.1。
++ GPU Driver Version: 550.127.08。
++ GPU: NVIDIA H200-140GB，推理至少需32GB以上的GPU。
 
 ## 環境設置
 您可以使用以下指令來創建完整 conda 虛擬環境`glm_py_3.10`，將創建到默認的`envs`目錄下:
@@ -13,7 +14,7 @@ conda env create -f environment.yml
 ```
 
 ## 微調模型介紹
-`checkpoint-4000_01`為使用玉山提供之資料集`label_0120.xlsx`中前 823 筆資料為訓練集微調，最後 200 筆為測試集，分數如圖metric.png。
+`checkpoint-4000_01`為使用玉山提供之資料集`label_0120.xlsx`中前 823 筆資料為訓練集微調，最後 200 筆為測試集，分數如下圖:![image](https://github.com/sandychinghuang/glm-4v-8b-base-recruitment-advertisement/blob/main/metric.png?raw=true)。
 
 
 ## 模型推理
