@@ -28,7 +28,7 @@ conda env create -f environment.yml
 ```bash
 python inference.py checkpoint-4000_01
 ```
-> 第一次推理，將自動下載 base model: `THUDM/glm-4v-9b`。推理大約耗時30分鐘。
+> 第一次推理，將自動下載 base model: `THUDM/glm-4v-9b`。推理大約耗時40分鐘。
 
 ## 參考文獻
 ```
