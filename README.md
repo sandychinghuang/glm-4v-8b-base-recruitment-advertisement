@@ -14,7 +14,8 @@ conda env create -f environment.yml
 ```
 
 ## 微調模型介紹
-`checkpoint-4000_01`為使用玉山提供之資料集`label_0120.xlsx`中前 823 筆資料為訓練集微調，最後 200 筆為測試集，分數如下圖:![image](https://github.com/sandychinghuang/glm-4v-8b-base-recruitment-advertisement/blob/main/metric.png?raw=true)。
+`checkpoint-4000_01`為使用玉山提供之資料集`label_0120.xlsx`中前 823 筆資料為訓練集微調，最後 200 筆為測試集，分數如下圖:
+![image](https://github.com/sandychinghuang/glm-4v-8b-base-recruitment-advertisement/blob/main/metric.png?raw=true)。
 
 
 ## 模型推理
@@ -28,7 +29,7 @@ python inference.py checkpoint-4000_01
 ```
 > 第一次推理，將自動下載 base model: `THUDM/glm-4v-9b`。推理大約耗時30分鐘。
 
-## 引用
+## 參考文獻
 ```
 @misc{wang2023cogvlm,
       title={ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools}, 
