@@ -21,7 +21,7 @@ conda env create -f environment.yml
 
 ## 模型推理
 1. 請先使用 `xlsx2jsonl.py` 將包含 file_name 和 result 的 xlsx 檔案轉換成`text.jsonl`。
-+ 需更改 user_message 中的 "image"路徑
++ 需更改 user_message 中的 image 路徑。
 + 需更改 input_file。
 2. 若需要，您可以在 `inference.py` 中更改 data_file ( test.jsonl ) 以及 output_path ( 用以儲存完整生成內容，包含 file_name、generated、label ) 的路徑。
 3. 請使用以下指令做推理:
