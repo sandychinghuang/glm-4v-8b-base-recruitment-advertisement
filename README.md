@@ -10,8 +10,10 @@
 ## 環境設置
 您可以使用以下指令來創建完整 conda 虛擬環境`glm_py_3.10`，將創建到默認的`envs`目錄下:
 ```bash
+conda config --set channel_priority flexible
 conda env create -f environment.yml
 ```
+
 
 ## 微調模型介紹
 `checkpoint-4000_01`為使用玉山提供之資料集`label_0120.xlsx`中前 823 筆資料為訓練集微調，最後 200 筆為測試集，分數如下圖:
@@ -28,7 +30,7 @@ conda env create -f environment.yml
 ```bash
 python inference.py checkpoint-4000_01
 ```
-> 第一次推理，將自動下載 base model: `THUDM/glm-4v-9b`。推理大約耗時30分鐘。
+> 第一次推理，將自動下載 base model: `THUDM/glm-4v-9b`。推理 200 筆資料大約耗時 40 分鐘。
 
 ## 參考文獻
 ```
