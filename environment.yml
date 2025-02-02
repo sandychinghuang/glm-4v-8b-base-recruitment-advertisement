@@ -1,4 +1,4 @@
-name: glm_py_3.10
+name: glm_test_py_3.10
 channels:
   - pytorch
   - nvidia
