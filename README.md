@@ -35,7 +35,7 @@ python inference.py checkpoint-4000_01
 > 第一次推理，將自動下載 base model: `THUDM/glm-4v-9b`。推理 200 筆資料大約耗時 40 分鐘。
 
 ## 算metric
-您可以是以下指令來針對生成的jsonl算metric:
+您可以是以下指令來針對生成的 jsonl 算 metric:
 ```bash
 python generate_metric.py glm_test_predictions.jsonl
 ```
