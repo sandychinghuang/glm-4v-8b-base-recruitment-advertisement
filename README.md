@@ -1,4 +1,4 @@
-# GLM-4v-9b-base-recruitment-advertisement
+# GLM-4V-9B-base-recruitment-advertisement
 
 ## 微調設備
 + OS: Ubuntu 22.04.2 LTS。
